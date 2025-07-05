@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.75in]{geometry} % Replaced fullpage with geometry
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{-0.375in}
+% \addtolength{\evensidemargin}{-0.375in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://alok.github.io/about/}{\Large Alok}} & Email : \href{mailto:alokc24@gmail.com}{alokc24@gmail.com}\\
+  \href{https://www.linkedin.com/in/alok92/}{https://www.linkedin.com/in/alok92/} & Mobile : +91-91761-45275 \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  Results-driven Site Reliability Engineer with 11+ years of experience designing and implementing infrastructure automation, incident management processes, and observability solutions for distributed systems at scale. Proven track record in performance optimization, capacity planning, and establishing SLOs for high-availability environments.
+}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Flipkart}{Bangalore}
+      {Senior Site Reliability Engineer}{Dec 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Event-Driven Automation}
+          {Spearheaded adoption of StackStorm for event-driven automation across multiple orgs, leading a blended team of 5 and reducing manual intervention in operational workflows by 65\%, significantly improving incident response and engineering efficiency.}
+        \resumeItem{VM Service Catalog}
+          {Architected and delivered a high-scale VM Service Catalog leveraging SaltStack, enabling orchestration across 30,000 servers in under one second and standardizing VM provisioning for platform-wide use.}
+        \resumeItem{SBOM Compliance Platform}
+          {Implemented an automated SBOM pipeline to track and unify open-source dependencies and licenses across Flipkart’s services, mitigating legal risks and ensuring enterprise-grade software compliance.}
+        \resumeItem{Java Observability Agent}
+          {Developed and deployed an in-house Java agent for automatic service graph generation, distributed tracing, and advanced observability across large-scale microservices. Leveraged OpenTelemetry and Kubernetes auto-instrumentation to provide deep runtime visibility with zero developer overhead, accelerating root cause analysis and dependency tracking.}
+        \resumeItem{Codelift}
+          {Leading a team of 6 engineers to build "Codelift," a scalable internal developer platform automating mass codebase and runtime upgrades (e.g., JDK, libraries), achieving a current success rate of 53\% and reducing manual upgrade cycles org-wide.}
+        \resumeItem{Observability Platform}
+          {Driving strategy and technical direction for a unified observability platform (Eventstore), collaborating with 10 senior engineers across teams to consolidate distributed tracing, service graphs, logging, and change intelligence into a single pane of glass.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Yugabyte}{Bangalore}
+      {Site Reliability Engineer/Manager}{June 2022 - Dec 2022}
+      \resumeItemListStart
+        \resumeItem{Secret Management}
+          {Led the org-wide migration of sensitive secrets to a centralized, secure vault-backed solution, achieving 100\% adoption across the organization, enhancing compliance and reducing security vulnerabilities by standardizing secret access and lifecycle management.}
+        \resumeItem{Coding Practices}
+          {Drove a quality-first initiative to uplift test coverage from 19\% to 65\% across critical services, embedding linting and testing into CI/CD pipelines and improving deployment confidence at scale.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Arcesium}{Bangalore}
+      {Reliability Engineering Lead/Manager}{Mar 2021 - June 2022}
+      \resumeItemListStart
+        \resumeItem{Incident Management}
+          {Designed and implemented an Incident Management bot using Opsdroid, achieving 100\% adoption within 4 months and reducing toil in on-call workflows by over 70\%, aligning with SRE best practices for automation.}
+        \resumeItem{Service Level Objectives (SLOs)}
+          {Led org-wide adoption of SLI/SLO practices, onboarding 30\% of teams in 90 days. Partnered with Engineering and Product to align reliability goals with OKRs, while coaching teams on operational maturity and long-term planning.}
+        \resumeItem{Hiring and Training}
+          {Built and scaled a high-performing SRE team (2 Tech Leads, 7 SREs). Owned recruitment, onboarding, and ongoing mentorship, including performance management and career development plans—resulting in 4 internal promotions and significantly improved retention.}
+        \resumeItem{Capacity Planning}
+          {Led team-level sprint execution, backlog grooming, and velocity tracking. Conducted regular 1:1s, performance evaluations, and growth check-ins, aligning individual development with team and org-level goals.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Expedia}{Gurgaon/Bangalore}
+      {Software Development Engineer/Lead SRE}{Oct 2015 - Oct 2020}
+      \resumeItemListStart
+        \resumeItem{Sponsored Listings - Adtech}
+          {Led the design and launch of a high-impact Sponsored Listings ad product deployed on cloud infrastructure, driving multi-million dollar revenue with a 6\% conversion rate.}
+        \resumeItem{Notification Delivery Platform}
+          {Collaborated with another team to develop a containerized notification delivery platform, integrating it into the organization's wide CI/CD pipelines as the standard.}
+        \resumeItem{Logging \& Monitoring Framework}
+          {Led a team of 5 to develop an end-to-end logging and monitoring framework, reducing Mean Time To Detection (MTTD) by 80\%, resulting in \$2-3 million USD per year in cost savings, and contributing to a significant reduction in overall downtime.}
+        \resumeItem{Fostering SRE Culture}
+          {Pioneered a cross-functional upskilling initiative that transitioned 10 operations analysts into fully functional SREs, enhancing team capabilities with Kubernetes and container orchestration skills while fostering a strong DevOps culture.}
+        \resumeItem{Change Management}
+          {Developed a change management system integrated with ServiceNow, capturing over 95\% of platform changes for enhanced traceability and reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {TCS}{Chennai}
+      {Systems Engineer}{Sep 2014 - Sep 2015}
+      \resumeItemListStart
+        \resumeItem{Performance Optimization}
+          {Created Windows-based UI for users to work on the risk files, update databases \& generate billing information for auto insurance which eliminated human errors completely.}
+      \resumeItemListEnd
+      \resumeSubheading
+      {Airtkt}{Delhi}
+      {Web Developer}{Feb 2014 - Aug 2014}
+      \resumeItemListStart
+        \resumeItem{Search Filters \& Notifications}
+          {Added flight search filters to Airtkt.com for better customer experience \& implemented a near real-time notification service for the support team}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical \& Leadership Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Infrastructure Automation}{: StackStorm, SaltStack, Ansible, Terraform, CloudFormation} \\
+      \textbf{Observability \& Monitoring}{: Datadog, Prometheus, Grafana, Splunk, Kibana, Catchpoint, Distributed Tracing, APM} \\
+      \textbf{Incident Management}{: PagerDuty, Opsdroid, ServiceNow, Postmortems, Response Protocols, Runbooks} \\
+      \textbf{Distributed Systems}{: Kafka, Zookeeper, High Availability Architecture, Scalability, Consensus Protocols} \\
+      \textbf{Cloud Platforms}{: AWS, GCP Multi-Cloud Strategy} \\
+      \textbf{Containerization}{: Docker, Kubernetes, Helm, Container Orchestration, Service Mesh (Istio)} \\
+      \textbf{CI/CD}{: Jenkins, ArgoCD, GitLab CI/CD, Deployment Automation, Blue/Green Deployments, Canary Releases} \\
+      \textbf{Service Level Objectives}{: SLI/SLO Implementation, Error Budgets, Reliability Metrics, Availability Planning} \\
+      \textbf{Security}{: Vault, Secret Management, Authentication, Access Control, Compliance Automation} \\
+      \textbf{Leadership}{: Team Management, Technical Mentorship, Project Management, Cross-team Collaboration} \\
+      \textbf{Capacity Planning}{: Resource Forecasting, Scaling Strategies, Cost Optimization} \\
+      \textbf{Markup \& Configuration Languages}{: HTML, CSS, JSON, YAML} \\
+      \textbf{Languages}{: Python, JavaScript, Bash, Nodejs} \\
+      \textbf{Databases}{: MySQL, PostgreSQL, MongoDB} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
