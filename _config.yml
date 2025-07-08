@@ -1,3 +1,5 @@
-title: "Alok | Site Reliability Engineer"
-description: "11+ years experience in reliability, observability, automation, and platform engineering."
+title: "Alok | SRE Blog"
+description: "SRE, Observability, and Engineering Leadership"
 theme: jekyll-theme-minimal
+baseurl: ""
+permalink: /blog/:title/

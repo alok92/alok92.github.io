@@ -1,32 +1,15 @@
 ---
 layout: default
-title: "About Me"
+title: "Home"
 ---
 
-# 👋 Hi, I'm Alok
+# 👋 Welcome
 
-**Site Reliability Engineer** with 11+ years of experience scaling infrastructure, leading incident response, and building developer platforms.
+Results-driven Site Reliability Engineer with 11+ years of experience designing and implementing infrastructure
+automation, incident management processes, and observability solutions for distributed systems at scale. Proven
+track record in performance optimization, capacity planning, and establishing SLOs for high-availability
+environments.
 
-## 🚀 What I Do
+📄 [Download Resume (PDF)](resume_sre.pdf)
 
-- **Automation & Orchestration**: StackStorm, SaltStack, Terraform, ArgoCD
-- **Observability & Incident Management**: Distributed tracing, SLOs, Eventstore
-- **Developer Platforms**: Codelift (auto upgrade engine), VM Catalog, SBOM pipelines
-- **Team Leadership**: Mentored 10+ engineers, built 3+ high-performing SRE teams
-
-## 🛠️ Featured Projects
-
-- **Codelift** – Automates runtime/code upgrades across 1000+ services
-- **Java Observability Agent** – Auto-instrumentation with OpenTelemetry
-- **Eventstore** – Unified logs, traces, change intelligence for microservices
-- **StackStorm Automation** – Reduced ops toil by 65%
-
-## 📄 Resume
-
-[Download Resume (PDF)](resume_sre.pdf)
-
-## 🔗 Links
-
-- [LinkedIn](https://www.linkedin.com/in/alok92)
-- [GitHub](https://github.com/alok92)
-- [Email Me](mailto:alokc24@gmail.com)
+🔗 [Read the Blog](./blog/)
