@@ -10,6 +10,6 @@ automation, incident management processes, and observability solutions for distr
 track record in performance optimization, capacity planning, and establishing SLOs for high-availability
 environments.
 
-📄 [Download Resume (PDF)](resume_sre.pdf)
+📄 [Download Resume (PDF)](resume_alok.pdf)
 
 🔗 [Read the Blog](./blog/)
